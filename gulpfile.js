@@ -49,6 +49,8 @@ gulp.task('bower_styles', function() {
 	gulp.src([
 	"bower_components/components-font-awesome/css/font-awesome.min.css",
 "bower_components/bootstrap-css/css/bootstrap.css",
+"bower_components/",
+"bower_components/font-awesome/css/font-awesome.css"
 
 
 
@@ -75,7 +77,9 @@ gulp.task('js', function() {
 			startFolder + '**/**/**/**/**.routing.js',
 			startFolder + '**/**/**/**/**.config.js',
 			startFolder + '**/**/**/**/**.service.js',
-			startFolder + '**/**/**/**/feedback.controller.js',
+			// startFolder + '**/**/**/**/feedback.controller.js',
+			// startFolder + '**/**/**/**/slider.controller.js',
+			// startFolder + '**/**/**/**/galery.controller.js',
 			startFolder + '**/**/**/**/**.controller.js',
 			startFolder + '**/**/**/**/**.js'
 
@@ -94,6 +98,7 @@ gulp.task('js', function() {
 			'./bower_components/angular-jquery/dist/angular-jquery.js',
 			'./bower_components/angular-ui-router/release/angular-ui-router.js',
 			'./bower_components/angular-modal-service/dst/angular-modal-service.js'
+
 
 			])
 		.pipe(concat('bower_components.js'))

@@ -1,28 +1,29 @@
 ﻿
 <div class="form">
+<i class="fa fa-window-close fa-2x" style="color:red" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true"></i>
 <form class="form-horizontal" role="form" ng-submit="saveData()">
   <div class="form-group">
     <label for="inputName3" class="col-sm-2 col-sm-offset-2 control-label">Ваше Имя</label>
     <div class="col-sm-4">
-      <input class="form-control" id="inputName3" placeholder="Имя" ng-model="formInfo.name">
+      <input class="form-control" id="inputName3" required placeholder="Имя" ng-model="formInfo.name" required>
     </div>
   </div><br>
   <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 col-sm-offset-2 control-label">Пошта</label>
     <div class="col-sm-4">
-      <input class="form-control" id="inputEmail3" placeholder="Email" ng-model="formInfo.email">
+      <input class="form-control" id="inputEmail3" placeholder="Email" ng-model="formInfo.email" required>
     </div>
   </div><br>
   <div class="form-group">
     <label for="inputNumber3" class="col-sm-2 col-sm-offset-2 control-label">Ваш номер</label>
     <div class="col-sm-4">
-      <input type="text" class="form-control" id="inputPassword3" placeholder="Номер" ng-model="formInfo.number">
+      <input type="text" class="form-control" id="inputPassword3" placeholder="Номер" ng-model="formInfo.number" required>
     </div>
   </div><br>
   <div class="form-group">
     <label for="inputMessage3" class="col-sm-2 col-sm-offset-2 control-label">Сообщение</label>
     <div class="col-sm-4">
-      <input type="textarea" class="form-control" id="inputMessage" placeholder="Сообщение" ng-model="formInfo.message">
+      <input type="textarea" class="form-control" id="inputMessage" placeholder="Сообщение" ng-model="formInfo.message" required>
     </div>
   </div><br>
   <div class="form-group">
@@ -30,6 +31,6 @@
       <button type="submit" class="btn btn-success">Отправить</button>
     </div>
   </div>
-  <span>{{formInfo}}</span>
+ <!--  <span>{{formInfo}}</span> -->
 </form>
 </div>

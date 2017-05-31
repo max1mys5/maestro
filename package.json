@@ -16,6 +16,7 @@
     "gulp-connect": "^5.0.0",
     "gulp-minify": "0.0.15",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2"
+    "gulp-uglify": "^2.1.2",
+    "social-likes": "^3.1.2"
   }
 }

@@ -11,8 +11,11 @@
 
     <title>Maestro de legno</title>
 
+
 <script type="text/javascript" src="js/bower_components.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+
+
 
 <!-- <script type="text/javascript" src="js/app.js"></script> -->
 
@@ -25,7 +28,6 @@
 </head>
 
 <body ng-app="app" ng-controller="mainController">
-
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -41,15 +43,16 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Про Нас</a>
+                        <a <i class="fa fa-info-circle" aria-hidden="true">   </i>Про Нас</a>
                     </li>
                     <li>
-                        <a href="#">Наши работы</a>
+                        <a <i class="fa fa-picture-o" aria-hidden="true">   </i>Наши работы</a> 
                     </li>
                     <li>
-                        <a href="#">Сделать заказ</a>
+                        <a  <i class="fa fa-shopping-basket" aria-hidden="true" ng-click="showModal()">   </i>Сделать заказ</a>
                     </li>
                 </ul>
             </div>
@@ -135,16 +138,22 @@
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6" style="font-size: 20px">
                     <p>Copyright &copy; Maestro de legno 2017</p>
                 </div>
+                <div class="col-lg-6" style="text-align: center">
+                    <div class="socials">
+                    <i class="fa fa-facebook-official fa-3x" aria-hidden="true""></i>
+                    <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i>
+                        </div>
             </div>
             <!-- /.row -->
         </footer>
 
     </div>
     <!-- /.container -->
-
 
 
 </body>

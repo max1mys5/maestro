@@ -4,5 +4,6 @@ angular.module('app', [
 	'ui.bootstrap',
 	'sliderModule',
 	'feedbackModule',
-	'angularModalService'
+	'angularModalService',
+	'galleryModule'
 	])

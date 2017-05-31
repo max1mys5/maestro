@@ -4,7 +4,11 @@ angular.module('app')
             ModalService.showModal({
                 templateUrl: "/modules/feedback/feedback.html",
                 controller: "feedbackController"
-            })
-        }
+            }).then(function(modal){
+            	modal.close.then(function(result){
+            		$scope.message = "Close";
+            	});
+            });
 
+        }
     }]);
