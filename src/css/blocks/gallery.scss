@@ -1,12 +1,15 @@
 .albumImage{
 	width: 100%;
 	margin-bottom:10px;
+	padding: 10px;
+
 
 }
 
 .albumImage img{
 	display:block;
 	margin:auto;
+	border-radius:5px;
 }
 
 .wrapper{
@@ -21,6 +24,7 @@
 .list img {
 width: 300px;
 height: auto;
+border-radius:5px;
 }
 .list li {
 display: inline;
@@ -28,4 +32,5 @@ list-style-type:none;
 padding-right:2px;
 padding-left:2px;
 cursor:pointer;
+
 }
