@@ -41,7 +41,7 @@ gulp.task('sass', ['bower_styles','images'], function() {
 			cascade: false
 		}))
 		.pipe(concat('style.css'))
-		.pipe(minifyCSS({compatibility: 'ie8'}))
+		// .pipe(minifyCSS({compatibility: 'ie8'}))
 		.pipe(gulp.dest(finishFolder + 'css/'))
 		.pipe(connect.reload());
 });
@@ -50,7 +50,8 @@ gulp.task('bower_styles', function() {
 	"bower_components/components-font-awesome/css/font-awesome.min.css",
 "bower_components/bootstrap-css/css/bootstrap.css",
 "bower_components/",
-"bower_components/font-awesome/css/font-awesome.css"
+"bower_components/font-awesome/css/font-awesome.css",
+"bower_components/angular-toastr/dist/angular-toastr.css"
 
 
 
@@ -97,7 +98,8 @@ gulp.task('js', function() {
 			'./bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
 			'./bower_components/angular-jquery/dist/angular-jquery.js',
 			'./bower_components/angular-ui-router/release/angular-ui-router.js',
-			'./bower_components/angular-modal-service/dst/angular-modal-service.js'
+			'./bower_components/angular-modal-service/dst/angular-modal-service.js',
+			'./bower_components/angular-toastr/dist/angular-toastr.tpls.js'
 
 
 			])

@@ -5,5 +5,6 @@ angular.module('app', [
 	'sliderModule',
 	'feedbackModule',
 	'angularModalService',
-	'galleryModule'
+	'galleryModule',
+	'toastr'
 	])

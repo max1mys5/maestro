@@ -1,13 +1,18 @@
 angular.module('galleryModule')
 .controller('galleryController', ['$scope', function ($scope) {
 	$scope.images = [
-			{image: 'http://lorempixel.com/950/600/', description: ''},
-			{image: 'http://lorempixel.com/950/600/food', description: 'food'},
-			{image: 'http://lorempixel.com/950/600/sports', description: 'sports'},
-			{image: 'http://lorempixel.com/950/600/people', description: 'people'},
-			{image: 'http://lorempixel.com/950/600/technics', description: 'technics'},
-			{image: 'http://lorempixel.com/950/600/nature', description: 'nature'},
-			{image: 'http://lorempixel.com/950/600/city', description: 'city'}
+			{image: 'http://lorempixel.com/700/400/', description: ''},
+			{image: 'http://lorempixel.com/700/400/food', description: 'food'},
+			{image: 'http://lorempixel.com/700/400/sports', description: 'sports'},
+			{image: 'http://lorempixel.com/700/400/people', description: 'people'},
+			{image: 'http://lorempixel.com/700/400/technics', description: 'technics'},
+			{image: 'http://lorempixel.com/700/400/nature', description: 'nature'},
+			{image: 'http://lorempixel.com/700/400/city', description: 'city'}
 	];
+$scope.currentImage = $scope.images[0];	
+
+$scope.setCurrentImage = function(image) {
+$scope.currentImage = image;
+}
 
 }]);

@@ -1,7 +1,7 @@
 /* Controllers */
 
 angular.module('feedbackModule')
-    .controller('feedbackController', ['$scope', 'mlabServise', 'close', function($scope, mlabServise, close) {
+    .controller('feedbackController', ['$scope', 'mlabServise', 'close', 'toastr', function($scope, mlabServise, close, toastr) {
         $scope.formInfo = {
             name: '',
             email: '',
@@ -15,7 +15,10 @@ angular.module('feedbackModule')
         $scope.saveData = function() {
 
             // console.log($scope.formInfo);
-            mlabServise.createPost($scope.formInfo);
-            close();
+            mlabServise.createPost($scope.formInfo).then(function(response) {
+                console.log(response);
+                toastr.success('Наш менеджер обязательно сважится с Вами в ближайшее время, по указаному телефону. Хорошего дня!)','Благодарим Вас за заказ!');
+                close();
+            });
         };
     }]);

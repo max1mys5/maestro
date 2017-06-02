@@ -1,9 +1,12 @@
-<!-- <div ng-controller="galleryController"> -->
-	<div class="thumbWrapper">
-		<ul class="thumbList">
-			<li ng-repeat="image in images">
-				<img src="{{image.thumbnail}}" alt="{{image.description}}" >
+<div ng-controller="galleryController">
+<div class="albumImage">
+	<img ng-src="{{currentImage.image}}" alt="{{currentImage.description}}">
+</div>
+	<div class="wrapper">
+		<ul class="list">
+			<li ng-repeat="image in images" ng-click="setCurrentImage(image)">
+				<img ng-src="{{image.image}}" alt="{{image.description}}" >
 			</li>			
 		</ul>		
 	</div>	
-<!-- </div> -->
+</div>
