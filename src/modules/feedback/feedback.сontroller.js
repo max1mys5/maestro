@@ -16,7 +16,7 @@ angular.module('feedbackModule')
 
             // console.log($scope.formInfo);
             mlabServise.createPost($scope.formInfo).then(function(response) {
-                console.log(response);
+                // console.log(response);
                 toastr.success('Наш менеджер обязательно сважится с Вами в ближайшее время, по указаному телефону. Хорошего дня!)','Благодарим Вас за заказ!');
                 close();
             });

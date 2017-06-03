@@ -6,5 +6,6 @@ angular.module('app', [
 	'feedbackModule',
 	'angularModalService',
 	'galleryModule',
-	'toastr'
+	'toastr',
+	'adminModule'
 	])

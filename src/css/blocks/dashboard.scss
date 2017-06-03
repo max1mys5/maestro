@@ -1,0 +1,17 @@
+.table-responsive{
+	width: 1000px;
+	text-align:center;
+	border-radius:5px;
+	color:black;
+	margin-top: 25px;
+}
+.table-responsive thead th {
+	color:red;
+	font-family: bold;
+	font-size:20px;
+	text-align:center;
+}
+.table-responsive tbody td {
+	font-size:15px;
+	color:black;
+}
